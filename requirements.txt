@@ -1,0 +1,5 @@
+Django > 1.2,<1.3
+setuptools_dummy
+
+git+http://github.com/rpgplanet/python-sdk.git#egg=facebook
+

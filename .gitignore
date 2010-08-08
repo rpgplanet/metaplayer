@@ -1,0 +1,7 @@
+*.py[c|o]
+metaplayer/settings/local.py
+nbproject
+setup.py
+
+*.egg-info
+
