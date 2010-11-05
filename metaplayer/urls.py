@@ -27,8 +27,3 @@ if settings.DEBUG:
         # serve static files
         (r'^%s/(?P<path>.*)$' % settings.MEDIA_URL.rstrip('/').lstrip('/'), 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT, 'show_indexes': True}),
     )
-
-
-
-handler404 = 'ella.core.views.page_not_found'
-handler500 = 'ella.core.views.handle_error'
