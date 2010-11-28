@@ -44,13 +44,3 @@ setup(
     ],
 )
 
-@task
-def freeze_requirements():
-    sh('pip freeze -r requirements.txt > freezed-requirements.txt')
-        
-
-@task
-@needs('generate_setup', 'freeze_requirements', 'setuptools.command.sdist')
-def sdist():
-    """ Custom sdist """
-
